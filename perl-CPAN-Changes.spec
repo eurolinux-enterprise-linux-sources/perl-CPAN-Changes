@@ -1,7 +1,7 @@
 Name:		perl-CPAN-Changes
 Summary:	Read and write Changes files
 Version:	0.20
-Release:	1%{?dist}
+Release:	2%{?dist}
 License:	GPL+ or Artistic
 Group:		Development/Libraries
 URL:		http://search.cpan.org/dist/CPAN-Changes/
@@ -59,6 +59,9 @@ make test TEST_FILES="$(echo $(find xt/ -name '*.t'))"
 %{_mandir}/man3/Test::CPAN::Changes.3pm*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20-2
+- Mass rebuild 2013-12-27
+
 * Thu May  2 2013 Paul Howarth <paul@city-fan.org> - 0.20-1
 - Update to 0.20:
   - 'delete_empty_groups' shouldn't erronously delete default group
